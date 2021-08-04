@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./estilo.css";
 import {ReactComponent as DeleteSVG} from "../../assets/img/delete.svg"
-
 class CardNota extends Component {
 
   apagar(){
@@ -17,6 +16,7 @@ class CardNota extends Component {
           <DeleteSVG onClick={this.apagar.bind(this)}/>
         </header>
         <p className="card-nota_texto">{this.props.texto}</p>
+
       </section>
     );
   }
